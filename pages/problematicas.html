@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="bootstrap-personal.css" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Problemáticas do Semestre com Javascript</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" id="logo" href="/index.html">Tabajara</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                id="inicio"
+                href="/index.html"
+                >Início</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="problematicas.html"
+                >Problemáticas</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="col-lg-12 my-5">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link text-secondary"
+              id="function-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#function"
+              type="button"
+              role="tab"
+              aria-controls="function"
+              aria-selected="true"
+            >
+              Function
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link text-secondary"
+              id="if-else-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#if-else"
+              type="button"
+              role="tab"
+              aria-controls="if-else"
+              aria-selected="false"
+            >
+              If e Else
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link text-secondary"
+              id="switch-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#switch"
+              type="button"
+              role="tab"
+              aria-controls="switch"
+              aria-selected="false"
+            >
+              Switch
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link text-secondary"
+              id="do-while-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#do-while"
+              type="button"
+              role="tab"
+              aria-controls="do-while"
+              aria-selected="false"
+            >
+              Do...While
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link text-secondary"
+              id="while-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#while"
+              type="button"
+              role="tab"
+              aria-controls="while"
+              aria-selected="false"
+            >
+              While
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link text-secondary"
+              id="for-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#for"
+              type="button"
+              role="tab"
+              aria-controls="for"
+              aria-selected="false"
+            >
+              For
+            </button>
+          </li>
+          <!-- CASO DE ERRADO, APAGAR A PARTIR DESSA LINHA -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link text-secondary active"
+              id="all-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#all"
+              type="button"
+              role="tab"
+              aria-controls="all"
+              aria-selected="false"
+            >
+              Tudo
+            </button>
+          </li>
+          <!-- CASO DE ERRADO, APAGAR ACIMA DESSA LINHA -->
+        </ul>
+
+        <!---------------------------------------- Questões que não usam nenhuma estrutura de controle -------------------------------------------------->
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade"
+            id="function"
+            role="tabpanel"
+            aria-labelledby="function-tab"
+          >
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 1</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Escreva um programa em JavaScript que apresente uma caixa de
+                  alerta para o usuário com a seguinte informação: “keep calm
+                  and carry on!”
+                </p>
+                <button class="btn btn-success" onclick="questao1()">
+                  Exibir
+                </button>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 2</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Faça um programa em JavaScript que apresente uma mensagem de
+                  alerta: “Cuidado com COVID 19!” quando o usuário clicar com o
+                  mouse sobre um botão.
+                </p>
+                <button class="btn btn-success" onclick="questao2()">
+                  Exibir
+                </button>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 5</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Faça um programa JavaScript em que o usuário informará 3
+                  números e o programa calculará a média aritmética desses
+                  números.
+                </p>
+                <label for="">Digite o primeiro número: </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="numero1-questao5"
+                  class="form-control"
+                />
+                <label for="" class="mt-3">Digite o segundo número: </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="numero2-questao5"
+                  class="form-control"
+                />
+                <label for="" class="mt-3">Digite o terceiro número: </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="numero3-questao5"
+                  class="form-control"
+                />
+                <button class="btn btn-success mt-3" onclick="questao5()">
+                  Exibir
+                </button>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 7</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Criar um programa para identificar o valor a ser pago por um
+                  plano de saúde dada a idade do conveniado considerando que
+                  todos pagam R$ 100 mais um adicional conforme a seguinte
+                  tabela: 1) crianças com menos de 10 anos pagam R$80; 2)
+                  conveniados com idade entre 10 e 30 anos pagam R$50; 3)
+                  conveniados com idade acima de 30 e até 60 anos pagam R$ 95; e
+                  4) conveniados acima de 60 anos pagam R$130.
+                </p>
+                <i>Preço fixo: R$ 100</i><br />
+                <label for="" class="mt-3">Crianças com até 9 anos: </label>
+                <select name="" id="convenAte9-questao7" class="form-control">
+                  <option value="">
+                    Selecione a quantidade de filhos dessa idade
+                  </option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+                <label for="" class="mt-3"
+                  >Pessoas com idade entre 10 a 30 anos:
+                </label>
+                <select name="" id="convenAte30-questao7" class="form-control">
+                  <option value="">
+                    Selecione a quantidade de filhos dessa idade
+                  </option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+                <label for="" class="mt-3"
+                  >Pessoas com idade entre 31 a 60 anos:
+                </label>
+                <select name="" id="convenAte60-questao7" class="form-control">
+                  <option value="">
+                    Selecione a quantidade de filhos dessa idade
+                  </option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+                <label for="" class="mt-3"
+                  >Pessoas com idade maior de 60 anos:
+                </label>
+                <select
+                  name=""
+                  id="convenAcima60-questao7"
+                  class="form-control"
+                >
+                  <option value="">
+                    Selecione a quantidade de filhos dessa idade
+                  </option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+                <button class="btn btn-success mt-3" onclick="questao7()">
+                  Calcular
+                </button>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 13</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Lidar com números em JavaScript pode dar muita dor de cabeça.
+                  Você já viu o que acontece quando faz o seguinte comando no
+                  console: console.log (0.1 + 0.2); O resultado será:
+                  0.30000000000000004. Outra coisa importante de observar, é o
+                  fato que o ponto é utilizado no lugar da vírgula e vice-versa.
+                  Com isso, vamos fazer um exercício simples para mostrar
+                  dinheiro sempre da forma correta. Desenvolva uma função
+                  JavaScript para que ela receba um valor como
+                  0.30000000000000004 e retorne R$0,30 (observe a vírgula e o
+                  ponto).
+                </p>
+                <label for=""
+                  >Insira um número real com 3 ou mais números na casa decimal:
+                </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="decimal-questao13"
+                  class="form-control"
+                />
+                <button class="btn btn-success mt-3" onclick="questao13()">
+                  Exibir
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Questões que usam o If-Else -->
+          <div
+            class="tab-pane fade"
+            id="if-else"
+            role="tabpanel"
+            aria-labelledby="if-else-tab"
+          >
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 3</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Faça um programa JavaScript que receba 3 números informados
+                  pelo usuário e em seguida apresente uma mensagem de alerta
+                  informando qual é o maior número dentre os números informados.
+                </p>
+                <label for="">Digite o primeiro número: </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="numero1-questao3"
+                  class="form-control"
+                />
+                <label for="" class="mt-3">Digite o segundo número: </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="numero2-questao3"
+                  class="form-control"
+                />
+                <label for="" class="mt-3">Digite o terceiro número: </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="numero3-questao3"
+                  class="form-control"
+                />
+                <button class="btn btn-success mt-3" onclick="questao3()">
+                  Descobrir
+                </button>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 4</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Faça um programa JavaScript em que o usuário informe a sua
+                  idade e o programa emita uma mensagem dizendo se o usuário é
+                  ou não menor de idade.
+                </p>
+                <label for="">Digite a sua idade: </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  min="0"
+                  id="idade-questao4"
+                  class="form-control"
+                />
+                <button class="btn btn-success mt-3" onclick="questao4()">
+                  Descobrir
+                </button>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 6</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Faça um programa JavaScript em que o usuário informará sua
+                  altura e peso e o programa calculará o seu IMC. Utilize as
+                  TAGs: input, button, e div em sua página. Use a div com um
+                  identificador e apresente nela o resultado do cálculo do IMC.
+                </p>
+                <label for="">Digite a sua altura: </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="altura-questao6"
+                  class="form-control"
+                />
+                <label for="" class="mt-3">Digite o seu peso: </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="peso-questao6"
+                  class="form-control"
+                />
+                <button class="btn btn-success mt-3" onclick="questao6()">
+                  Descobrir
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Questões que usam o Switch -->
+          <div
+            class="tab-pane fade"
+            id="switch"
+            role="tabpanel"
+            aria-labelledby="switch-tab"
+          >
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 8</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Criar uma função para calcular o valor a ser pago de anuidade
+                  de uma associação. A função recebe como parâmetro um inteiro
+                  que representa o mês (1 - janeiro, 2 - fevereiro…) que foi
+                  paga e o valor da anuidade. A anuidade deve ser paga no mês de
+                  janeiro. Por mês, é cobrado 5% de juros (sob o regime de juros
+                  compostos). O retorno deve ser o valor a ser pago para o
+                  respectivo mês escolhido.
+                </p>
+                <label for="">Escolha um mês desejado: </label>
+                <select name="" id="mes-questao8" class="form-control">
+                  <option value="">Selecione um mês</option>
+                  <option value="1">1 - Janeiro</option>
+                  <option value="2">2 - Fevereiro</option>
+                  <option value="3">3 - Março</option>
+                  <option value="4">4 - Maio</option>
+                  <option value="5">5 - Abril</option>
+                  <option value="6">6 - Junho</option>
+                  <option value="7">7 - Julho</option>
+                  <option value="8">8 - Agosto</option>
+                  <option value="9">9 - Setembro</option>
+                  <option value="10">10 - Outubro</option>
+                  <option value="11">11 - Novembro</option>
+                  <option value="12">12 - Dezembro</option>
+                </select>
+                <label for="" class="mt-3"
+                  >Selecione o valor da anuidade:
+                </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="valor-questao8"
+                  class="form-control"
+                />
+                <button class="btn btn-success mt-3" onclick="questao8()">
+                  Calcular
+                </button>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 14</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Crie uma estrutura condicional switch que receba uma string
+                  com o nome de operação e que possua quatro casos: Caso soma,
+                  subtração, divisão, multiplicação. Crie também um default, que
+                  retornará uma mensagem de erro no console
+                </p>
+                <label for="">Digite o primeiro número: </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="numero1-questao14"
+                  class="form-control"
+                />
+                <label for="" class="mt-3">Operação desejada: </label>
+                <select name="" id="operacao-questao14" class="form-control">
+                  <option value="">Selecione uma operação</option>
+                  <option value="soma">Soma</option>
+                  <option value="subtracao">Subtração</option>
+                  <option value="multiplicacao">Multiplicação</option>
+                  <option value="divisao">Divisão</option>
+                </select>
+                <label for="" class="mt-3">Digite o segundo número: </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="numero2-questao14"
+                  class="form-control"
+                />
+                <button class="btn btn-success mt-3" onclick="questao14()">
+                  Calcular
+                </button>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 15</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Um funcionário irá receber um aumento de acordo com o seu
+                  plano de trabalho, de acordo com a tabela abaixo:
+                </p>
+                <table class="table">
+                  <tr>
+                    <td>Plano</td>
+                    <td>Aumento</td>
+                  </tr>
+                  <tr>
+                    <td>A</td>
+                    <td>10%</td>
+                  </tr>
+                  <tr>
+                    <td>B</td>
+                    <td>15%</td>
+                  </tr>
+                  <tr>
+                    <td>C</td>
+                    <td>20%</td>
+                  </tr>
+                </table>
+                <p class="card-text">
+                  Faça uma função que leia o plano de trabalho e o salário atual
+                  de um funcionário e calcula e imprime o seu novo salário. Use
+                  a estrutura switch e faça um caso default que indique que o
+                  plano é inválido.
+                </p>
+                <label for="">Digite o salário do funcionário: </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="salario-questao15"
+                  class="form-control"
+                />
+                <label for="" class="mt-3">Operação desejada: </label>
+                <select name="" id="plano-questao15" class="form-control">
+                  <option value="">Selecione um plano</option>
+                  <option value="a">Plano A</option>
+                  <option value="b">Plano B</option>
+                  <option value="c">Plano C</option>
+                </select>
+                <button class="btn btn-success mt-3" onclick="questao15()">
+                  Calcular
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Questões que usam o Do...While -->
+          <div
+            class="tab-pane fade"
+            id="do-while"
+            role="tabpanel"
+            aria-labelledby="do-while-tab"
+          >
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 12</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Construa uma função que receba como parâmetros as alturas e as
+                  taxas de crescimento anuais de duas crianças e calcule se
+                  existe uma criança menor, caso exista se a criança menor
+                  ultrapassará a maior e em quantos anos isso acontecerá.
+                  Utilize centímetros para as unidades de medida.
+                </p>
+                <!-- Dados da primeira criança -->
+                <label for="" class="mt-3"
+                  >Qual o nome da primeira criança?
+                </label>
+                <input
+                  type="text"
+                  id="crianca1-questao12"
+                  class="form-control"
+                />
+                <label for="" class="mt-3">Qual é a altura dela? </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="alturaCrianca1-questao12"
+                  class="form-control"
+                />
+                <label for="" class="mt-3"
+                  >Qual é a taxa de crescimento dessa criança?
+                </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="taxaCrianca1-questao12"
+                  class="form-control"
+                />
+
+                <!-- Dados da segunda criança -->
+
+                <label for="" class="mt-3"
+                  >Qual o nome da segunda criança?
+                </label>
+                <input
+                  type="text"
+                  id="crianca2-questao12"
+                  class="form-control"
+                />
+                <label for="" class="mt-3">Qual é a altura dela? </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="alturaCrianca2-questao12"
+                  class="form-control"
+                />
+                <label for="" class="mt-3"
+                  >Qual é a taxa de crescimento dessa criança?
+                </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="taxaCrianca2-questao12"
+                  class="form-control"
+                />
+
+                <button class="btn btn-success mt-3" onclick="questao12()">
+                  Exibir
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Questões que usam o While -->
+          <div
+            class="tab-pane fade"
+            id="while"
+            role="tabpanel"
+            aria-labelledby="while-tab"
+          >
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 9</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Crie um programa que imprima 11 vezes a frase " Hello World!"
+                  utilizando uma estrutura de repetição while.
+                </p>
+                <button class="btn btn-success" onclick="questao9()">
+                  Exibir
+                </button>
+              </div>
+              <h5 class="card-header">Prints do "Hello, world!"</h5>
+              <div class="card-body">
+                <p class="card-text" id="campo-questao9">
+                  Nada a exibir no momento
+                </p>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 11</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Fazer um programa para encontrar todos os pares entre 1 e 100.
+                </p>
+                <button class="btn btn-success" onclick="questao11()">
+                  Exibir
+                </button>
+              </div>
+              <h5 class="card-header">Números pares de 0 a 100:</h5>
+              <div class="card-body">
+                <p class="card-text" id="campo-questao11">
+                  Nada a exibir no momento
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Questões que usam o For -->
+          <div
+            class="tab-pane fade"
+            id="for"
+            role="tabpanel"
+            aria-labelledby="for-tab"
+          >
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 10</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Escrever um programa para exibir os números de 1 até 50 na
+                  tela
+                </p>
+                <button class="btn btn-success" onclick="questao10()">
+                  Exibir
+                </button>
+              </div>
+              <h5 class="card-header">Números de 1 até 50</h5>
+              <div class="card-body">
+                <p class="card-text" id="campo-questao10">
+                  Nada a exibir no momento
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- CASO DE ERRADO, APAGAR A PARTIR DESSA LINHA -->
+          <div
+            class="tab-pane fade show active"
+            id="all"
+            role="tabpanel"
+            aria-labelledby="all-tab"
+          >
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 1</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Escreva um programa em JavaScript que apresente uma caixa de
+                  alerta para o usuário com a seguinte informação: “keep calm
+                  and carry on!”
+                </p>
+                <button class="btn btn-success" onclick="questao1()">
+                  Exibir
+                </button>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 2</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Faça um programa em JavaScript que apresente uma mensagem de
+                  alerta: “Cuidado com COVID 19!” quando o usuário clicar com o
+                  mouse sobre um botão.
+                </p>
+                <button class="btn btn-success" onclick="questao2()">
+                  Exibir
+                </button>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 3</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Faça um programa JavaScript que receba 3 números informados
+                  pelo usuário e em seguida apresente uma mensagem de alerta
+                  informando qual é o maior número dentre os números informados.
+                </p>
+                <label for="">Digite o primeiro número: </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="numero1-questao3-tudo"
+                  class="form-control"
+                />
+                <label for="" class="mt-3">Digite o segundo número: </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="numero2-questao3-tudo"
+                  class="form-control"
+                />
+                <label for="" class="mt-3">Digite o terceiro número: </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="numero3-questao3-tudo"
+                  class="form-control"
+                />
+                <button class="btn btn-success mt-3" onclick="questao3Tudo()">
+                  Descobrir
+                </button>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 4</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Faça um programa JavaScript em que o usuário informe a sua
+                  idade e o programa emita uma mensagem dizendo se o usuário é
+                  ou não menor de idade.
+                </p>
+                <label for="">Digite a sua idade: </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  min="0"
+                  id="idade-questao4-tudo"
+                  class="form-control"
+                />
+                <button class="btn btn-success mt-3" onclick="questao4Tudo()">
+                  Descobrir
+                </button>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 5</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Faça um programa JavaScript em que o usuário informará 3
+                  números e o programa calculará a média aritmética desses
+                  números.
+                </p>
+                <label for="">Digite o primeiro número: </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="numero1-questao5-tudo"
+                  class="form-control"
+                />
+                <label for="" class="mt-3">Digite o segundo número: </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="numero2-questao5-tudo"
+                  class="form-control"
+                />
+                <label for="" class="mt-3">Digite o terceiro número: </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="numero3-questao5-tudo"
+                  class="form-control"
+                />
+                <button class="btn btn-success mt-3" onclick="questao5Tudo()">
+                  Exibir
+                </button>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 6</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Faça um programa JavaScript em que o usuário informará sua
+                  altura e peso e o programa calculará o seu IMC. Utilize as
+                  TAGs: input, button, e div em sua página. Use a div com um
+                  identificador e apresente nela o resultado do cálculo do IMC.
+                </p>
+                <label for="">Digite a sua altura: </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="altura-questao6-tudo"
+                  class="form-control"
+                />
+                <label for="" class="mt-3">Digite o seu peso: </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="peso-questao6-tudo"
+                  class="form-control"
+                />
+                <button class="btn btn-success mt-3" onclick="questao6Tudo()">
+                  Descobrir
+                </button>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 7</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Criar um programa para identificar o valor a ser pago por um
+                  plano de saúde dada a idade do conveniado considerando que
+                  todos pagam R$ 100 mais um adicional conforme a seguinte
+                  tabela: 1) crianças com menos de 10 anos pagam R$80; 2)
+                  conveniados com idade entre 10 e 30 anos pagam R$50; 3)
+                  conveniados com idade acima de 30 e até 60 anos pagam R$ 95; e
+                  4) conveniados acima de 60 anos pagam R$130.
+                </p>
+                <i>Preço fixo: R$ 100</i><br />
+                <label for="" class="mt-3">Crianças com até 9 anos: </label>
+                <select
+                  name=""
+                  id="convenAte9-questao7-tudo"
+                  class="form-control"
+                >
+                  <option value="">
+                    Selecione a quantidade de filhos dessa idade
+                  </option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+                <label for="" class="mt-3"
+                  >Pessoas com idade entre 10 a 30 anos:
+                </label>
+                <select
+                  name=""
+                  id="convenAte30-questao7-tudo"
+                  class="form-control"
+                >
+                  <option value="">
+                    Selecione a quantidade de filhos dessa idade
+                  </option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+                <label for="" class="mt-3"
+                  >Pessoas com idade entre 31 a 60 anos:
+                </label>
+                <select
+                  name=""
+                  id="convenAte60-questao7-tudo"
+                  class="form-control"
+                >
+                  <option value="">
+                    Selecione a quantidade de filhos dessa idade
+                  </option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+                <label for="" class="mt-3"
+                  >Pessoas com idade maior de 60 anos:
+                </label>
+                <select
+                  name=""
+                  id="convenAcima60-questao7-tudo"
+                  class="form-control"
+                >
+                  <option value="">
+                    Selecione a quantidade de filhos dessa idade
+                  </option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+                <button class="btn btn-success mt-3" onclick="questao7Tudo()">
+                  Calcular
+                </button>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 8</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Criar uma função para calcular o valor a ser pago de anuidade
+                  de uma associação. A função recebe como parâmetro um inteiro
+                  que representa o mês (1 - janeiro, 2 - fevereiro…) que foi
+                  paga e o valor da anuidade. A anuidade deve ser paga no mês de
+                  janeiro. Por mês, é cobrado 5% de juros (sob o regime de juros
+                  compostos). O retorno deve ser o valor a ser pago para o
+                  respectivo mês escolhido.
+                </p>
+                <label for="">Escolha um mês desejado: </label>
+                <select name="" id="mes-questao8-tudo" class="form-control">
+                  <option value="">Selecione um mês</option>
+                  <option value="1">1 - Janeiro</option>
+                  <option value="2">2 - Fevereiro</option>
+                  <option value="3">3 - Março</option>
+                  <option value="4">4 - Maio</option>
+                  <option value="5">5 - Abril</option>
+                  <option value="6">6 - Junho</option>
+                  <option value="7">7 - Julho</option>
+                  <option value="8">8 - Agosto</option>
+                  <option value="9">9 - Setembro</option>
+                  <option value="10">10 - Outubro</option>
+                  <option value="11">11 - Novembro</option>
+                  <option value="12">12 - Dezembro</option>
+                </select>
+                <label for="" class="mt-3"
+                  >Selecione o valor da anuidade:
+                </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="valor-questao8-tudo"
+                  class="form-control"
+                />
+                <button class="btn btn-success mt-3" onclick="questao8Tudo()">
+                  Calcular
+                </button>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 9</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Crie um programa que imprima 11 vezes a frase " Hello World!"
+                  utilizando uma estrutura de repetição while.
+                </p>
+                <button class="btn btn-success" onclick="questao9Tudo()">
+                  Exibir
+                </button>
+              </div>
+              <h5 class="card-header">Prints do "Hello, world!"</h5>
+              <div class="card-body">
+                <p class="card-text" id="campo-questao9-tudo">
+                  Nada a exibir no momento
+                </p>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 10</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Escrever um programa para exibir os números de 1 até 50 na
+                  tela
+                </p>
+                <button class="btn btn-success" onclick="questao10Tudo()">
+                  Exibir
+                </button>
+              </div>
+              <h5 class="card-header">Números de 1 até 50</h5>
+              <div class="card-body">
+                <p class="card-text" id="campo-questao10-tudo">
+                  Nada a exibir no momento
+                </p>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 11</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Fazer um programa para encontrar todos os pares entre 1 e 100.
+                </p>
+                <button class="btn btn-success" onclick="questao11Tudo()">
+                  Exibir
+                </button>
+              </div>
+              <h5 class="card-header">Números pares de 0 a 100:</h5>
+              <div class="card-body">
+                <p class="card-text" id="campo-questao11-tudo">
+                  Nada a exibir no momento
+                </p>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 12</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Construa uma função que receba como parâmetros as alturas e as
+                  taxas de crescimento anuais de duas crianças e calcule se
+                  existe uma criança menor, caso exista se a criança menor
+                  ultrapassará a maior e em quantos anos isso acontecerá.
+                  Utilize centímetros para as unidades de medida.
+                </p>
+                <!-- Dados da primeira criança -->
+                <label for="" class="mt-3"
+                  >Qual o nome da primeira criança?
+                </label>
+                <input
+                  type="text"
+                  id="crianca1-questao12-tudo"
+                  class="form-control"
+                />
+                <label for="" class="mt-3">Qual é a altura dela? </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="alturaCrianca1-questao12-tudo"
+                  class="form-control"
+                />
+                <label for="" class="mt-3"
+                  >Qual é a taxa de crescimento dessa criança?
+                </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="taxaCrianca1-questao12-tudo"
+                  class="form-control"
+                />
+
+                <!-- Dados da segunda criança -->
+
+                <label for="" class="mt-3"
+                  >Qual o nome da segunda criança?
+                </label>
+                <input
+                  type="text"
+                  id="crianca2-questao12-tudo"
+                  class="form-control"
+                />
+                <label for="" class="mt-3">Qual é a altura dela? </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="alturaCrianca2-questao12-tudo"
+                  class="form-control"
+                />
+                <label for="" class="mt-3"
+                  >Qual é a taxa de crescimento dessa criança?
+                </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="taxaCrianca2-questao12-tudo"
+                  class="form-control"
+                />
+
+                <button class="btn btn-success mt-3" onclick="questao12Tudo()">
+                  Exibir
+                </button>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 13</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Lidar com números em JavaScript pode dar muita dor de cabeça.
+                  Você já viu o que acontece quando faz o seguinte comando no
+                  console: console.log (0.1 + 0.2); O resultado será:
+                  0.30000000000000004. Outra coisa importante de observar, é o
+                  fato que o ponto é utilizado no lugar da vírgula e vice-versa.
+                  Com isso, vamos fazer um exercício simples para mostrar
+                  dinheiro sempre da forma correta. Desenvolva uma função
+                  JavaScript para que ela receba um valor como
+                  0.30000000000000004 e retorne R$0,30 (observe a vírgula e o
+                  ponto).
+                </p>
+                <label for=""
+                  >Insira um número real com 3 ou mais números na casa decimal:
+                </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="decimal-questao13-tudo"
+                  class="form-control"
+                  required
+                />
+                <button class="btn btn-success mt-3" onclick="questao13Tudo()">
+                  Exibir
+                </button>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 14</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Crie uma estrutura condicional switch que receba uma string
+                  com o nome de operação e que possua quatro casos: Caso soma,
+                  subtração, divisão, multiplicação. Crie também um default, que
+                  retornará uma mensagem de erro no console
+                </p>
+                <label for="">Digite o primeiro número: </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="numero1-questao14-tudo"
+                  class="form-control"
+                />
+                <label for="" class="mt-3">Operação desejada: </label>
+                <select
+                  name=""
+                  id="operacao-questao14-tudo"
+                  class="form-control"
+                >
+                  <option value="">Selecione uma operação</option>
+                  <option value="soma">Soma</option>
+                  <option value="subtracao">Subtração</option>
+                  <option value="multiplicacao">Multiplicação</option>
+                  <option value="divisao">Divisão</option>
+                </select>
+                <label for="" class="mt-3">Digite o segundo número: </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="numero2-questao14-tudo"
+                  class="form-control"
+                />
+                <button class="btn btn-success mt-3" onclick="questao14Tudo()">
+                  Calcular
+                </button>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <h5 class="card-header">Questão 15</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Um funcionário irá receber um aumento de acordo com o seu
+                  plano de trabalho, de acordo com a tabela abaixo:
+                </p>
+                <table class="table">
+                  <tr>
+                    <td>Plano</td>
+                    <td>Aumento</td>
+                  </tr>
+                  <tr>
+                    <td>A</td>
+                    <td>10%</td>
+                  </tr>
+                  <tr>
+                    <td>B</td>
+                    <td>15%</td>
+                  </tr>
+                  <tr>
+                    <td>C</td>
+                    <td>20%</td>
+                  </tr>
+                </table>
+                <p class="card-text">
+                  Faça uma função que leia o plano de trabalho e o salário atual
+                  de um funcionário e calcula e imprime o seu novo salário. Use
+                  a estrutura switch e faça um caso default que indique que o
+                  plano é inválido.
+                </p>
+                <label for="">Digite o salário do funcionário: </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="salario-questao15-tudo"
+                  class="form-control"
+                />
+                <label for="" class="mt-3">Operação desejada: </label>
+                <select name="" id="plano-questao15-tudo" class="form-control">
+                  <option value="">Selecione um plano</option>
+                  <option value="a">Plano A</option>
+                  <option value="b">Plano B</option>
+                  <option value="c">Plano C</option>
+                </select>
+                <button class="btn btn-success mt-3" onclick="questao15Tudo()">
+                  Calcular
+                </button>
+              </div>
+            </div>
+
+            <!-- CASO DE ERRADO, APAGAR A PARTIR DESSA LINHA -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="/script/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
